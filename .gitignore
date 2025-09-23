@@ -1,0 +1,12 @@
+# <==========> <==========> <==========>
+# <===== .GITIGNORE FILE =====>
+# <==========> <==========> <==========>
+
+node_modules
+.env
+.vscode
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
