@@ -14,7 +14,7 @@ fs.readdirSync(__dirname)
     require(path.join(__dirname, file))(sequelize, DataTypes);
   });
 
-// <===== RUN ASSOCIATIONS =====>
+// <===== ASSOCIATIONS =====>
 Object.values(sequelize.models).forEach((model) => {
   if (typeof model.associate === "function") {
     model.associate(sequelize.models);
