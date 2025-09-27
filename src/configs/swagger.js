@@ -35,11 +35,9 @@ const optionsSwagger = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title:
-        "Ticketing system with Node.js, Express.js, Sequelize.js, and PostgreSQL for the final exam: Backend project!",
+      title: "Yakuniy Imtihon uchun My Ticket loyihasi!",
       version: "1.0.0",
-      description:
-        "Ticketing system with Node.js, Express.js, Sequelize.js, and PostgreSQL for the final exam: Backend project!",
+      description: "My Ticket loyihasi uchun backend qismini yaratish uchun!",
     },
     servers: [
       { url: "http://localhost:5001", description: "Local Development Server" },
@@ -56,11 +54,7 @@ const swaggerDocs = swaggerJsdoc(optionsSwagger);
 
 // <===== SWAGGER FUNCTION =====>
 const swagger = (server) => {
-  server.use(
-    "/my_ticket/api-docs",
-    swaggerUi.serve,
-    swaggerUi.setup(swaggerDocs)
-  );
+  server.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 };
 
 // <===== EXPORTS =====>
